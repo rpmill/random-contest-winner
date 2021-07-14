@@ -39,6 +39,8 @@ namespace ContestWinnerSelector
             this.winnersLabel = new System.Windows.Forms.Label();
             this.clearBoxesButton = new System.Windows.Forms.Button();
             this.generateWinnersButton = new System.Windows.Forms.Button();
+            this.clearWinnersButton = new System.Windows.Forms.Button();
+            this.clearWinnersBoxButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainLabel
@@ -66,9 +68,9 @@ namespace ContestWinnerSelector
             this.fileLocationLable.ForeColor = System.Drawing.SystemColors.Highlight;
             this.fileLocationLable.Location = new System.Drawing.Point(71, 122);
             this.fileLocationLable.Name = "fileLocationLable";
-            this.fileLocationLable.Size = new System.Drawing.Size(95, 19);
+            this.fileLocationLable.Size = new System.Drawing.Size(78, 19);
             this.fileLocationLable.TabIndex = 2;
-            this.fileLocationLable.Text = "File Location:";
+            this.fileLocationLable.Text = "File Name:";
             // 
             // fileLocationButton
             // 
@@ -127,7 +129,7 @@ namespace ContestWinnerSelector
             this.clearBoxesButton.Name = "clearBoxesButton";
             this.clearBoxesButton.Size = new System.Drawing.Size(113, 23);
             this.clearBoxesButton.TabIndex = 8;
-            this.clearBoxesButton.Text = "Clear";
+            this.clearBoxesButton.Text = "Clear All";
             this.clearBoxesButton.UseVisualStyleBackColor = false;
             this.clearBoxesButton.Click += new System.EventHandler(this.clearBoxesButton_Click);
             // 
@@ -135,19 +137,45 @@ namespace ContestWinnerSelector
             // 
             this.generateWinnersButton.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.generateWinnersButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.generateWinnersButton.Location = new System.Drawing.Point(267, 391);
+            this.generateWinnersButton.Location = new System.Drawing.Point(265, 334);
             this.generateWinnersButton.Name = "generateWinnersButton";
-            this.generateWinnersButton.Size = new System.Drawing.Size(113, 23);
+            this.generateWinnersButton.Size = new System.Drawing.Size(137, 61);
             this.generateWinnersButton.TabIndex = 9;
             this.generateWinnersButton.Text = "Generate Winners";
             this.generateWinnersButton.UseVisualStyleBackColor = false;
             this.generateWinnersButton.Click += new System.EventHandler(this.generateWinnersButton_Click);
+            // 
+            // clearWinnersButton
+            // 
+            this.clearWinnersButton.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.clearWinnersButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.clearWinnersButton.Location = new System.Drawing.Point(75, 353);
+            this.clearWinnersButton.Name = "clearWinnersButton";
+            this.clearWinnersButton.Size = new System.Drawing.Size(113, 23);
+            this.clearWinnersButton.TabIndex = 10;
+            this.clearWinnersButton.Text = "Clear Winners";
+            this.clearWinnersButton.UseVisualStyleBackColor = false;
+            this.clearWinnersButton.Click += new System.EventHandler(this.clearWinnersButton_Click);
+            // 
+            // clearWinnersBoxButton
+            // 
+            this.clearWinnersBoxButton.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.clearWinnersBoxButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.clearWinnersBoxButton.Location = new System.Drawing.Point(75, 313);
+            this.clearWinnersBoxButton.Name = "clearWinnersBoxButton";
+            this.clearWinnersBoxButton.Size = new System.Drawing.Size(113, 23);
+            this.clearWinnersBoxButton.TabIndex = 11;
+            this.clearWinnersBoxButton.Text = "Clear Winners Box";
+            this.clearWinnersBoxButton.UseVisualStyleBackColor = false;
+            this.clearWinnersBoxButton.Click += new System.EventHandler(this.clearWinnersBoxButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.clearWinnersBoxButton);
+            this.Controls.Add(this.clearWinnersButton);
             this.Controls.Add(this.generateWinnersButton);
             this.Controls.Add(this.clearBoxesButton);
             this.Controls.Add(this.winnersLabel);
@@ -177,6 +205,8 @@ namespace ContestWinnerSelector
         private System.Windows.Forms.Label winnersLabel;
         private System.Windows.Forms.Button clearBoxesButton;
         private System.Windows.Forms.Button generateWinnersButton;
+        private System.Windows.Forms.Button clearWinnersButton;
+        private System.Windows.Forms.Button clearWinnersBoxButton;
     }
 }
 
